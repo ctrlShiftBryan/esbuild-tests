@@ -1,9 +1,9 @@
 require("esbuild").build({
   entryPoints: ["App.js"],
-  outfile: "build/AppBundle2.js",
+  outfile: "build/AppBundle.js",
   bundle: true,
   loader: {".js": "jsx"},
-  format: 'iife',
+  format: 'esm',
   platform: 'browser'
 })
 .then(() => console.log("⚡ Done"))

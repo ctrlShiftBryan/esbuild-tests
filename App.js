@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 function App() {
-  const test = () => { console.log('it works') }
+  const test = () => 'hello, from esbuild!'
   test();
   return (
-    <div>Hello, esbuild!</div>
+    <div>{test()}</div>
   );
 }
 
