@@ -2,7 +2,7 @@ require("esbuild").build({
   entryPoints: ["App.js"],
   outfile: "build/AppBundle.js",
   bundle: true,
-  loader: {".js": "jsx"},
+  loader: {".js": "jsx", ".ts": "tsx"},
   format: 'esm',
   platform: 'browser'
 })
